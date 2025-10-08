@@ -1,0 +1,7 @@
+# Ignorar archivos CSV grandes
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.zip
+*.rar
