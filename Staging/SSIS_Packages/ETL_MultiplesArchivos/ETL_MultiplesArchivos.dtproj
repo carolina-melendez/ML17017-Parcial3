@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">CARO</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVq3Rjt+a5EOAf5UXF/qdqQAAAAACAAAAAAAQZgAAAAEAACAAAACrLTG4tAxQB1wUBSCzlu+NpUWnSgrrI/zXndoDPXNeGAAAAAAOgAAAAAIAACAAAAA/sAs7QTCKRSUlPayKFrG/Pz6BheQQ/lWtgb0xPP1dvpAAAAD0mpJx5/GUEleXaRXulwtiP4mHEzPNcdYpg0pnzIvvoW+4VWkC1RUWz7SrodwcPkHRbyF2LKK36W1uMCaNSWCIFdvIuwPALpyDkXKH6R8P8txioMVa/deYg6EsoSwlrire9DIRQFfY6+o/eLxX9ge0gMMcyw6ufJkvkmuHoMGG7coC9J0I4pVEplQIxfnzpq5AAAAAxmEXDtpytClAz+FWpl1Xyl0DJSjwVW0Von9TDqrzEeWxuVS5nqD+ZzdNz1Ohv8COTKMvRfu3iykY42qkMQF1rQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ9nO5aaJJk2uQ/PdTLEzxAAAAAACAAAAAAAQZgAAAAEAACAAAAAFXPcoTP4wa9Ql3REz2FPnIP5jATcpJvhVsI1DM6TkPQAAAAAOgAAAAAIAACAAAADLxOcJl6wkUnzxUvbWNJhMDv8qrflEZFHPfMiBvUbhEZAAAADshD/7TXXk7tpuH3wt+tU5FraXLRmRo8hAEfFZifI5dZFLdCIwXGxPxNNhXXa2DX4xjwzCCiMjCjtukTIn32bhA/U4hbATzPCdH69ZYOgC64K4zpbznVBLH7q3K2n1BSIsCipr2oOPTDvlSWkgLUxJRDn+lcX/yw72h+IyQLJ+83C2ihWKac9XY20Q4sKmN+NAAAAAz5df2wdDaYqvdtQN8bD20DThVAySmkNwx9LY3VhAvVPMxjOjGUp+KrINaAxd14IdNLoi2g135dOt07vY3LOA5Q==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,17 +42,17 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">11</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">20</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{303BD0D0-C7F9-4E10-880F-67113C4AFF60}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{BA095D3E-14AC-46E1-90C7-B4BD30D1E41A}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.165.227.22.226.staging_vuelos.sa.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.BD_Staging.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -67,7 +67,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.165.227.22.226.staging_vuelos.sa.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.BD_Staging.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -78,11 +78,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=165.227.22.226;User ID=sa;Initial Catalog=staging_vuelos;Provider=MSOLEDBSQL.1;Persist Security Info=True;Application Name=SSIS-Package-{59BA26FB-26A6-4B40-BAFC-45AF5A106F84}165.227.22.226.staging_vuelos.sa;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=165.227.22.226;User ID=sa;Initial Catalog=staging_vuelos;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{59BA26FB-26A6-4B40-BAFC-45AF5A106F84}165.227.22.226.staging_vuelos.sa;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.165.227.22.226.staging_vuelos.sa.ConnectRetryCount">
+                <SSIS:Parameter SSIS:Name="CM.BD_Staging.ConnectRetryCount">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -97,7 +97,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.165.227.22.226.staging_vuelos.sa.ConnectRetryInterval">
+                <SSIS:Parameter SSIS:Name="CM.BD_Staging.ConnectRetryInterval">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -112,7 +112,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.165.227.22.226.staging_vuelos.sa.ConnectUsingManagedIdentity">
+                <SSIS:Parameter SSIS:Name="CM.BD_Staging.ConnectUsingManagedIdentity">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -127,7 +127,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.165.227.22.226.staging_vuelos.sa.InitialCatalog">
+                <SSIS:Parameter SSIS:Name="CM.BD_Staging.InitialCatalog">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -142,7 +142,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.165.227.22.226.staging_vuelos.sa.Password">
+                <SSIS:Parameter SSIS:Name="CM.BD_Staging.Password">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -156,7 +156,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.165.227.22.226.staging_vuelos.sa.RetainSameConnection">
+                <SSIS:Parameter SSIS:Name="CM.BD_Staging.RetainSameConnection">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -171,7 +171,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.165.227.22.226.staging_vuelos.sa.ServerName">
+                <SSIS:Parameter SSIS:Name="CM.BD_Staging.ServerName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -186,7 +186,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.165.227.22.226.staging_vuelos.sa.UserName">
+                <SSIS:Parameter SSIS:Name="CM.BD_Staging.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -348,6 +348,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

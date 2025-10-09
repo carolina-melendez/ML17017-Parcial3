@@ -11,8 +11,8 @@
   DTS:LocaleID="17418"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="19"
-  DTS:VersionGUID="{C5355105-D374-47F8-BC5B-9A0132247091}">
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{20EFA50D-F569-4AE0-915E-E649E2C125B3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,11 +25,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=165.227.22.226;User ID=sa;Initial Catalog=staging_vuelos;Provider=MSOLEDBSQL.1;Persist Security Info=True;Application Name=SSIS-Package-{59BA26FB-26A6-4B40-BAFC-45AF5A106F84}165.227.22.226.staging_vuelos.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=165.227.22.226;User ID=sa;Initial Catalog=staging_vuelos;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{59BA26FB-26A6-4B40-BAFC-45AF5A106F84}165.227.22.226.staging_vuelos.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVq3Rjt+a5EOAf5UXF/qdqQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADbFtXJC110CmmOWIstKH6/nGDUAypxhjPHhxAAjV+DXgAAAAAOgAAAAAIAACAAAAAT+GFYS6wkNI+DLhVbo4a2NQ/QgUKOinQ3QSVWbyfRVSAAAACEELoSvKZ8paCb4S87ivY2bmnQpHrfKyxvp/1tLuUn5kAAAAB+B8UaejXD6I07spxVrDmuMBtgZ/Q6DeT5DY3VZN1H7oFG5iVEzOgkPcVWgG1Q32myDJ1eEMBsDF+An/cGJVJT</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ9nO5aaJJk2uQ/PdTLEzxAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADnx3Jxl5QH/dT+IR3NUFnZA4IZ56/48sIG+PrWCV80gwAAAAAOgAAAAAIAACAAAABdCaHpsbNiCv1jc14RdZwbw5BpGa5bHqCJu2phJiQWLSAAAAC2on9H1lH5oXhFEc6yxeEx4LpeobvNFKjDRLqd2jTW70AAAACSsMe6RP17WhaFPfSXeEMmLQLg0xkyO7GniOFf8z7vtaWl/fzopL5u6N/f+32pKaX/EBFFjRBVQCBgYbbkzZCr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1153,7 +1153,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="vRutaCarpeta">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\diann\Documents\ESPECIALIZACIÓN\ML17017-Parcial3\DataSource\csv</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\carolina\OneDrive\Documentos\csv parcial</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -1169,10 +1169,12 @@
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
         DTS:DTSID="{C4BABF73-6478-4FF5-A35F-E2063F97E339}"
         DTS:ObjectName="{C4BABF73-6478-4FF5-A35F-E2063F97E339}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::vRutaCarpeta]</DTS:PropertyExpression>
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\diann\Documents\ESPECIALIZACIÓN\ML17017-Parcial3\DataSource\csv" />
+              Folder="C:\Users\carolina\OneDrive\Documentos\csv parcial" />
             <FEFEProperty
               FileSpec="Flights_*.csv" />
             <FEFEProperty
@@ -3444,7 +3446,7 @@
                           refId="Package\Contenedor de bucles Foreach\Cargar CSV en VuelosRaw\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cancelled]"
                           codePage="1252"
                           dataType="str"
-                          length="10"
+                          length="250"
                           name="Cancelled" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Cargar CSV en VuelosRaw\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CancellationCode]"
@@ -3456,7 +3458,7 @@
                           refId="Package\Contenedor de bucles Foreach\Cargar CSV en VuelosRaw\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Diverted]"
                           codePage="1252"
                           dataType="str"
-                          length="10"
+                          length="250"
                           name="Diverted" />
                         <externalMetadataColumn
                           refId="Package\Contenedor de bucles Foreach\Cargar CSV en VuelosRaw\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AirTime]"
@@ -3555,8 +3557,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{76D8B54E-5A38-45A5-8769-C0088D6C8F47}"
-          DTS:ObjectName="{76D8B54E-5A38-45A5-8769-C0088D6C8F47}"
+          DTS:DTSID="{9260162A-607B-48A2-94DB-D0631ECE9AF8}"
+          DTS:ObjectName="{9260162A-607B-48A2-94DB-D0631ECE9AF8}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::vRutaArchivoCompleta" />
       </DTS:ForEachVariableMappings>
@@ -3575,14 +3577,14 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="212,42"
+          Size="212,41.6"
           Id="Package\Contenedor de bucles Foreach\Cargar CSV en VuelosRaw"
           TopLeft="96,58" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="334,155"
-          Size="334,198"
+          PanelSize="334.4,155.2"
+          Size="334.4,198.4"
           Id="Package\Contenedor de bucles Foreach"
           TopLeft="101,85" />
       </GraphLayout>
@@ -3594,39 +3596,39 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\Contenedor de bucles Foreach\Cargar CSV en VuelosRaw\Flat File Source"
           TopLeft="76,44" />
         <NodeLayout
-          Size="177,42"
+          Size="176.8,41.6"
           Id="Package\Contenedor de bucles Foreach\Cargar CSV en VuelosRaw\OLE DB Destination"
           TopLeft="361,173" />
         <EdgeLayout
           Id="Package\Contenedor de bucles Foreach\Cargar CSV en VuelosRaw.Paths[Flat File Source Output]"
-          TopLeft="154,86">
+          TopLeft="154,85.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="295.5,87"
+              EndConnector="295.4,87.4"
               Start="0,0"
-              End="295.5,79.5">
+              End="295.4,79.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.5" />
+                    End="0,39.7" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,39.5"
-                    Point2="0,43.5"
-                    Point3="4,43.5" />
+                    Point1="0,39.7"
+                    Point2="0,43.7"
+                    Point3="4,43.7" />
                   <mssgle:LineSegment
-                    End="291.5,43.5" />
+                    End="291.4,43.7" />
                   <mssgle:CubicBezierSegment
-                    Point1="291.5,43.5"
-                    Point2="295.5,43.5"
-                    Point3="295.5,47.5" />
+                    Point1="291.4,43.7"
+                    Point2="295.4,43.7"
+                    Point3="295.4,47.7" />
                   <mssgle:LineSegment
-                    End="295.5,79.5" />
+                    End="295.4,79.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

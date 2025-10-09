@@ -35,9 +35,9 @@ CREATE TABLE stg.VuelosRaw (
     ArrDelayMinutes         VARCHAR(250) NULL,
 
     -- === Estado del vuelo ===
-    Cancelled               VARCHAR(10)  NULL,
+    Cancelled               VARCHAR(250)  NULL,
     CancellationCode        VARCHAR(250) NULL,
-    Diverted                VARCHAR(10)  NULL,
+    Diverted                VARCHAR(250)  NULL,
 
     -- === Duración / distancia ===
     CRSElapsedTime          VARCHAR(250) NULL,
