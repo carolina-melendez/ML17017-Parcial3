@@ -1,7 +1,63 @@
-# Ignorar archivos CSV grandes
-*.csv
-*.xlsx
-*.xls
-*.parquet
-*.zip
-*.rar
+# Ignorar la carpeta de configuración de Visual Studio
+.vs/
+
+# Archivos temporales de compilación
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*_h.h
+*.ncb
+*.suo
+*.sdf
+*.cachefile
+*.dbmdl
+*.bak
+*.log
+
+# Carpetas de salida
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Configuración de usuario y depuración
+*.userosscache
+*.userprefs
+
+# Configuración de paquetes NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+
+# Archivos de publicación o publicación temporal
+publish/
+*.publish.xml
+
+# Configuración de Resharper / Rider
+_ReSharper*/
+*.DotSettings.user
+
+# Archivos de prueba y cobertura
+TestResult*/
+*.coverage
+*.coveragexml
+
+# Archivos de SSIS / Visual Studio temporales
+*.dtproj.user
+*.dtsx.ide
+*.designer.cs
+*.rdl.data
+
+# Archivos locales de configuración
+*.local.config
+*.env
+
+# Archivos de sistema
+Thumbs.db
+Desktop.ini
