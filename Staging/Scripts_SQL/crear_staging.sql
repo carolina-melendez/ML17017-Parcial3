@@ -45,7 +45,7 @@ CREATE TABLE stg.VuelosRaw (
     AirTime                 VARCHAR(250) NULL,
     Distance                VARCHAR(250) NULL,
 
-    -- === Causas de retraso (convertidas a texto para evitar error) ===
+    -- === Causas de retraso ===
     CarrierDelay            VARCHAR(250) NULL,
     WeatherDelay            VARCHAR(250) NULL,
     NASDelay                VARCHAR(250) NULL,
