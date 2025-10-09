@@ -48,12 +48,6 @@ TestResult*/
 *.coverage
 *.coveragexml
 
-# Archivos de SSIS / Visual Studio temporales
-*.dtproj.user
-*.dtsx.ide
-*.designer.cs
-*.rdl.data
-
 # Archivos locales de configuración
 *.local.config
 *.env
