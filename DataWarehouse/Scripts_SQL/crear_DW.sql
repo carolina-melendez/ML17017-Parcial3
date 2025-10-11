@@ -45,7 +45,10 @@ CREATE TABLE dim.DimAeropuerto (
     AeropuertoKey INT IDENTITY PRIMARY KEY,
     CodigoIATA    VARCHAR(10) NOT NULL,
     Ciudad        VARCHAR(250),
-    EstadoNombre  VARCHAR(250)
+    EstadoNombre  VARCHAR(250),
+    FechaInicio   DATE NOT NULL DEFAULT (GETDATE()),
+    FechaFin      DATE NOT NULL DEFAULT ('9999-12-31'),
+    Activo        BIT NOT NULL DEFAULT 1
 );
 
 CREATE TABLE dim.DimCausa (
