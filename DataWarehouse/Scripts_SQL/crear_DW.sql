@@ -37,7 +37,9 @@ CREATE TABLE dim.DimAerolinea (
     NumeroVuelo_Marketing     VARCHAR(20)  NULL,   
     NombreAerolinea           VARCHAR(250) NULL,   
     CodigoIATA_Operadora      VARCHAR(10)  NULL,   
-    NumeroDeCola              VARCHAR(50)  NULL,   
+    NumeroDeCola              VARCHAR(50)  NULL,
+    FechaInicio   DATE NOT NULL DEFAULT (GETDATE()),
+    FechaFin      DATE NOT NULL DEFAULT ('9999-12-31'),   
     Activo                    BIT DEFAULT 1
 );
 
