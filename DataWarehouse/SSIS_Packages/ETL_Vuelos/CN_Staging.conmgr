@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="165.227.22.226.staging_vuelos.sa"
+  DTS:DTSID="{2621053F-A654-48DE-B834-1D79B0540D10}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">"Data Source=" + @[$Project::pSqlServer] + ";Initial Catalog=" + @[$Project::pStagingDb] + ";" + ( @[$Project::pUseWindowsAuth] ? "Integrated Security=SSPI;" : "User ID=" + @[$Project::pSqlUser] + ";Password=" + @[$Project::pSqlPassword] + ";" ) + "Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;"</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=165.227.22.226;User ID=sa;Initial Catalog=staging_vuelos;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-ETL_Vuelos-{2621053F-A654-48DE-B834-1D79B0540D10}165.227.22.226.staging_vuelos.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZ9nO5aaJJk2uQ/PdTLEzxAAAAAACAAAAAAAQZgAAAAEAACAAAAB74NOq7CjRVhiPZvH/0BxYqv31lYyonIvqu7blTvKJPwAAAAAOgAAAAAIAACAAAAD/c6yRCwpBWGFolrT7KbknBuHzRn8hf2zEOT4h1aFeI4AAAAAupaNGKBJhwRcwvt9w0yL6JjKQOj1AGH/klz+MZJpRqTGCStR6J/oQgReDhUO2OD2thJIt2Qjzo8DVkLup5qcoHVJ7BLAVLRJBUVnbMQsDRMV32gksXEXKm1T8pU/wZMfA5O/FxPr8bkFQcQP9DB3m0v8OEYQP1jFLtSGuWlJQyEAAAACoGtMiz1va5oHcHNg/VgWTdKHfBBDZpz6ypPBJAwFlb8ZgrOMEz9naNNCJHHsFkewv/isqJxCMIkPnb9tkwk8c</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

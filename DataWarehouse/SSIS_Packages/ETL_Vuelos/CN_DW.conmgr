@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="CN_DW"
+  DTS:DTSID="{7E1E6408-6D8E-4C0A-9C7A-7F4FC2B8CBF1}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=165.227.22.226;Initial Catalog=DWVuelos;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-ETL_Vuelos-{7E1E6408-6D8E-4C0A-9C7A-7F4FC2B8CBF1}CN_DW;">
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+  <DTS:PropertyExpression DTS:Name="ConnectionString">"Data Source=" + @[$Project::pSqlServer] + ";Initial Catalog=" + @[$Project::pDwDb] + ";" + ( @[$Project::pUseWindowsAuth] ? "Integrated Security=SSPI;" : "User ID=" + @[$Project::pSqlUser] + ";Password=" + @[$Project::pSqlPassword] + ";" ) + "Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;"</DTS:PropertyExpression>
+</DTS:ConnectionManager>
